@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style-type: none;
+}
+.full-calendar {
+    position: relative;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+}
+#prevMonth {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+#nextMonth {
+    position: absolute;
+    top: 6%;
+    left: 88%;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.weekdays li {
+    width: calc(100% / 7);
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.days li {
+    width: calc(100% / 7);
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.current-day {
+    background-color: green;
+}
